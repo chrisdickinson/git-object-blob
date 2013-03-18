@@ -7,7 +7,7 @@ function GitBlob(buf) {
 var cons = GitBlob
   , proto = cons.prototype
 
-proto.type = 2
+proto.type = 3 
 proto.looseType = 'blob'
 
 proto.serialize = 
