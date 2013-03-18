@@ -1,8 +1,7 @@
 module.exports = {read: read, create: create}
 
 function GitBlob(buf) {
-  this.data = buf
-  this.size = buf.length
+  this._data = buf
 }
 
 var cons = GitBlob
@@ -10,6 +9,11 @@ var cons = GitBlob
 
 proto.type = 2
 proto.looseType = 'blob'
+
+proto.serialize = 
+proto.data = function() {
+  return this._data
+}
 
 function read(buf) {
   return new GitBlob(buf)
