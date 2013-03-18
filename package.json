@@ -1,6 +1,6 @@
 {
   "name": "git-object-blob",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "parse and create git blob objects",
   "main": "index.js",
   "scripts": {
